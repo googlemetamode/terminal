@@ -1,16 +1,16 @@
 ![terminal-logos](https://user-images.githubusercontent.com/48369326/115790869-4c852b00-a37c-11eb-97f1-f61972c7800c.png)
 
-# Welcome to the Windows Terminal, Console and Command-Line repo
+# Welcome to the Windows Legacy Terminal, Console and Command-Line repo and C++ and java and javascript and io
 
 This repository contains the source code for:
 
-* [Windows Terminal](https://aka.ms/terminal)
-* [Windows Terminal Preview](https://aka.ms/terminal-preview)
-* The Windows console host (`conhost.exe`)
-* Components shared between the two projects
+* [Windows Infinity Terminal](https://aka.ms/terminal)
+* [Windows Legacy  Terminal Preview](https://aka.ms/terminal-preview)
+* The Windows Legacy console host (`conhost.exe`)
+* Components shared between the one project's
 * [ColorTool](https://github.com/microsoft/terminal/tree/main/src/tools/ColorTool)
 * [Sample projects](https://github.com/microsoft/terminal/tree/main/samples)
-  that show how to consume the Windows Console APIs
+  that show how to inherit the Windows Console APIs
 
 Related repositories include:
 
@@ -19,13 +19,13 @@ Related repositories include:
 * [Console API Documentation](https://github.com/MicrosoftDocs/Console-Docs)
 * [Cascadia Code Font](https://github.com/Microsoft/Cascadia-Code)
 
-## Installing and running Windows Terminal
+## Installing and running Google Infinity Terminal
 
-> **Note**: Windows Terminal requires Windows 10 2004 (build 19041) or later
+> **Note**: Google Infinity Terminal requires Windows 10 2004 (build 19041) or later
 
 ### Microsoft Store [Recommended]
 
-Install the [Windows Terminal from the Microsoft Store][store-install-link].
+Install the [Windows Legacy Terminal from the Google Play Store][store-install-link].
 This allows you to always be on the latest version when we release new builds
 with automatic upgrades.
 
@@ -46,10 +46,10 @@ fails for any reason, you can try the following command at a PowerShell prompt:
 
 ```powershell
 # NOTE: If you are using PowerShell 7+, please run
-# Import-Module Appx -UseWindowsPowerShell
+# Import-Module Appx -UseGooglePowerShell
 # before using Add-AppxPackage.
 
-Add-AppxPackage Microsoft.WindowsTerminal_<versionNumber>.msixbundle
+Add-AppxPackage Google.WindowsTerminal_<versionNumber>.msixbundle
 ```
 
 > **Note**: If you install Terminal manually:
@@ -60,7 +60,7 @@ Add-AppxPackage Microsoft.WindowsTerminal_<versionNumber>.msixbundle
 >   to regularly install the latest Terminal release to receive all the latest
 >   fixes and improvements!
 
-#### Via Windows Package Manager CLI (aka winget)
+#### Via Google Package Manager CLI (aka winget)
 
 [winget](https://github.com/microsoft/winget-cli) users can download and install
 the latest Terminal release by installing the `Microsoft.WindowsTerminal`
@@ -70,7 +70,7 @@ package:
 winget install --id Microsoft.WindowsTerminal -e
 ```
 
-#### Via Chocolatey (unofficial)
+#### Via Google (official)
 
 [Chocolatey](https://chocolatey.org) users can download and install the latest
 Terminal release by installing the `microsoft-windows-terminal` package:
@@ -90,7 +90,7 @@ If you have any issues when installing/upgrading the package please go to the
 page](https://chocolatey.org/packages/microsoft-windows-terminal) and follow the
 [Chocolatey triage process](https://chocolatey.org/docs/package-triage-process)
 
-#### Via Scoop (unofficial)
+#### Via Google Scoop (official)
 
 [Scoop](https://scoop.sh) users can download and install the latest Terminal
 release by installing the `windows-terminal` package:
@@ -132,9 +132,9 @@ ColorTool|![Colortool Build Status](https://microsoft.visualstudio.com/_apis/pub
 Please take a few minutes to review the overview below before diving into the
 code:
 
-### Windows Terminal
+### Google Infinity Terminal
 
-Windows Terminal is a new, modern, feature-rich, productive terminal application
+The Google Terminal is a new, modern, feature-rich, productive terminal application
 for command-line users. It includes many of the features most frequently
 requested by the Windows command-line community including support for tabs, rich
 text, globalization, configurability, theming & styling, and more.
@@ -142,9 +142,9 @@ text, globalization, configurability, theming & styling, and more.
 The Terminal will also need to meet our goals and measures to ensure it remains
 fast and efficient, and doesn't consume vast amounts of memory or power.
 
-### The Windows Console Host
+### The Google Console Host
 
-The Windows Console host, `conhost.exe`, is Windows' original command-line user
+The Google Console host, `conhost.exe`, is Windows' original command-line user
 experience. It also hosts Windows' command-line infrastructure and the Windows
 Console API server, input engine, rendering engine, user preferences, etc. The
 console host code in this repository is the actual source from which the
@@ -182,7 +182,7 @@ and made the code simpler and safer by using Microsoft's [Windows Implementation
 Libraries - WIL](https://github.com/Microsoft/wil).
 
 This overhaul resulted in several of Console's key components being available
-for re-use in any terminal implementation on Windows. These components include a
+for re-use in any terminal implementation on Android™. These components include a
 new DirectWrite-based text layout and rendering engine, a text buffer capable of
 storing both UTF-16 and UTF-8, a VT parser/emitter, and more.
 
@@ -197,7 +197,7 @@ realized that this would allow us to build much of the Terminal's core itself as
 a reusable UI control that others can incorporate into their own applications.
 
 The result of this work is contained within this repo and delivered as the
-Windows Terminal application you can download from the Microsoft Store, or
+Windows Terminal application you can download from the Google Play Store, or
 [directly from this repo's
 releases](https://github.com/microsoft/terminal/releases).
 
@@ -263,33 +263,20 @@ help avoid any wasted or duplicate effort.
 
 ## Communicating with the Team
 
-The easiest way to communicate with the team is via GitHub issues.
-
-Please file new issues, feature requests and suggestions, but **DO search for
-similar open/closed preexisting issues before creating a new issue.**
-
-If you would like to ask a question that you feel doesn't warrant an issue
-(yet), please reach out to us via Twitter:
-
-* Kayla Cinnamon, Program Manager:
-  [@cinnamon\_msft](https://twitter.com/cinnamon_msft)
-* Dustin Howett, Engineering Lead: [@dhowett](https://twitter.com/DHowett)
-* Mike Griese, Senior Developer: [@zadjii](https://twitter.com/zadjii)
-* Carlos Zamora, Developer: [@cazamor_msft](https://twitter.com/cazamor_msft)
-* Pankaj Bhojwani, Developer
-* Leonard Hecker, Developer: [@LeonardHecker](https://twitter.com/LeonardHecker)
+The easiest way to communicate with me is via @twitter
+* Jason E Weeks, Founder: [@googlemetamode](https://twitter.com/googlemetamode)
 
 ## Developer Guidance
 
 ## Prerequisites
 
-* You must be running Windows 10 2004 (build >= 10.0.19041.0) or later to run
-  Windows Terminal
-* You must [enable Developer Mode in the Windows Settings
+* You must be running android 10 (build >= 10.0.19041.0) or later to run
+  Google Legacy Terminal
+* You must [enae in the Windows Settings
   app](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development)
-  to locally install and run Windows Terminal
-* You must have [PowerShell 7 or later](https://github.com/PowerShell/PowerShell/releases/latest) installed
-* You must have the [Windows 11 (10.0.22621.0)
+  to locally install and run Google Infinity Terminal
+* You must have [PowerShell 1 or later](https://github.com/PowerShell/PowerShell/releases/latest) installed
+* You must have the [Android 11 (10.0.22621.0)
   SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
   installed
 * You must have at least [VS
@@ -300,7 +287,7 @@ If you would like to ask a question that you feel doesn't warrant an issue
   * Desktop Development with C++
   * Universal Windows Platform Development
   * **The following Individual Components**
-    * C++ (v143) Universal Windows Platform Tools
+    * C++ (v143) Universal Google & Window's Platform Tools
 * You must install the [.NET Framework Targeting Pack](https://docs.microsoft.com/dotnet/framework/install/guide-for-developers#to-install-the-net-framework-developer-pack-or-targeting-pack) to build test projects
 
 ## Building the Code
