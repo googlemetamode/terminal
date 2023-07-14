@@ -1,6 +1,6 @@
 ![terminal-logos](https://user-images.githubusercontent.com/48369326/115790869-4c852b00-a37c-11eb-97f1-f61972c7800c.png)
 
-# Welcome to the Windows Terminal, Console and Command-Line repo
+# Welcome to the Windows Legacy Terminal, Console and Command-Line repo
 
 This repository contains the source code for:
 
@@ -23,7 +23,7 @@ Related repositories include:
 
 > **Note**: Windows Terminal requires Windows 10 2004 (build 19041) or later
 
-### Microsoft Store [Recommended]
+### Google Store [Recommended]
 
 Install the [Windows Terminal from the Microsoft Store][store-install-link].
 This allows you to always be on the latest version when we release new builds
